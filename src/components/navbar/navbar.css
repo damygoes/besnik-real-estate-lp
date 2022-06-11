@@ -1,0 +1,132 @@
+.besnik__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+  background-color: var(--color-header);
+}
+
+.besnik__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+.besnik__navbar-links_logo {
+  margin-right: 2rem;
+}
+
+.besnik__navbar-links_logo img {
+  width: 107px;
+  height: 24px;
+}
+
+.besnik__navbar-links_container {
+  display: flex;
+  margin-left: 5rem;
+}
+
+.besnik__navbar-sign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.besnik__navbar-links_container p,
+.besnik__navbar-sign p,
+.besnik__navbar-mobile_container p {
+  color: var(--color-navbar-links);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.besnik__navbar-sign button,
+.besnik__navbar-mobile_container button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background: var(--color-button);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 8px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.besnik__navbar-mobile {
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+}
+
+.besnik__navbar-mobile svg {
+  cursor: pointer;
+  color: var(--color-button);
+}
+
+.besnik__navbar-mobile_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+  background: var(--color-footer);
+  padding: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+}
+
+.besnik__navbar-mobile_container p {
+  margin: 1rem 0;
+}
+
+.besnik__navbar-mobile_container-links-sign {
+  display: none;
+}
+
+/* Media Queris */
+/* Larger Devices  - any size below 1050px will be affected by this query */
+@media screen and (max-width: 1050px) {
+  .besnik__navbar-links_container {
+    display: none;
+  }
+  .besnik__navbar-mobile {
+    display: flex;
+  }
+}
+/* Tablet Devices  - any size below 700px will be affected by this query */
+@media screen and (max-width: 700px) {
+  .besnik__navbar {
+    padding: 2rem 4rem;
+  }
+}
+/* Mobile Devices  - any size below 550px will be affected by this query */
+@media screen and (max-width: 550px) {
+  .besnik__navbar {
+    padding: 2rem;
+  }
+  .besnik__navbar-sign {
+    display: none;
+  }
+  .besnik__navbar-mobile_container {
+    top: 20px;
+  }
+  .besnik__navbar-mobile_container-links-sign {
+    display: block;
+  }
+}
