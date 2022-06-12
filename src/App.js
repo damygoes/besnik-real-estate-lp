@@ -12,8 +12,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Rating />
-      <Brand />
+      <div className="rating-brand section__margin section__padding">
+        <Rating />
+        <Brand />
+      </div>
       <Description />
       <Featured />
       <Highlight />

@@ -1,0 +1,112 @@
+.besnik__rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.besnik__rating-content_left,
+.besnik__rating-content_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.besnik__rating-content_left {
+  align-items: flex-start;
+}
+
+.besnik__rating-content_right {
+  align-items: flex-end;
+}
+
+.besnik__rating-content_left img {
+  width: 107px;
+  height: 24px;
+  margin-bottom: 2rem;
+}
+.besnik__rating-content_left p,
+.besnik__rating-content_right p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #7d8589;
+}
+
+.besnik__rating-content_right img {
+  width: 116px;
+  height: 18.85px;
+  margin-bottom: 2rem;
+}
+.besnik__rating-content_right p {
+  text-align: right;
+}
+
+/* 
+/* Media Queris */
+/* Larger Devices  - any size below 1050px will be affected by this query */
+@media screen and (max-width: 1050px) {
+  .besnik__rating-content_left img,
+  .besnik__rating-content_right img {
+    margin-bottom: 1rem;
+  }
+
+  .besnik__rating-content_left p {
+    margin-right: 3rem;
+  }
+  .besnik__rating-content_right p {
+    margin-left: 5rem;
+  }
+}
+/* Tablet Devices  - any size below 650px will be affected by this query */
+@media screen and (max-width: 650px) {
+  .besnik__rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .besnik__rating-content_left,
+  .besnik__rating-content_right {
+    width: 100%;
+    align-items: center;
+  }
+
+  .besnik__rating-content_left img,
+  .besnik__rating-content_right img {
+    margin-bottom: 1rem;
+  }
+  .besnik__rating-content_left p,
+  .besnik__rating-content_right p {
+    font-size: 12px;
+    line-height: 21px;
+    text-align: center;
+  }
+}
+/* Mobile Devices  - any size below 490px will be affected by this query */
+@media screen and (max-width: 490px) {
+  .besnik__rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .besnik__rating-content_left,
+  .besnik__rating-content_right {
+    width: 100%;
+    align-items: center;
+  }
+
+  .besnik__rating-content_left img,
+  .besnik__rating-content_right img {
+    margin-bottom: 1.5rem;
+  }
+  .besnik__rating-content_left p,
+  .besnik__rating-content_right p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

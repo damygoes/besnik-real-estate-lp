@@ -1,0 +1,13 @@
+.besnik__brand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5rem;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+.besnik__brand img {
+  width: 145.71px;
+  height: 27.44px;
+  flex: 1;
+}

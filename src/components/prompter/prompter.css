@@ -1,0 +1,78 @@
+.besnik__prompter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 459px;
+  height: 130px;
+}
+
+.besnik__prompter > div {
+  width: 41px;
+  height: 4px;
+  border: 2px solid var(--color-text-secondary);
+  border-radius: 12px;
+  margin-bottom: 0.7rem;
+}
+
+.besnik__prompter-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin-bottom: 2rem;
+}
+
+.besnik__prompter-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--color-subtext);
+  flex-wrap: wrap;
+}
+
+/* 
+/* Media Queris */
+/* Larger Devices  - any size below 1050px will be affected by this query */
+@media screen and (max-width: 1050px) {
+  .besnik__prompter > div {
+    margin-bottom: 0.5rem;
+  }
+  .besnik__prompter-title {
+    font-size: 32px;
+    line-height: 41px;
+  }
+}
+/* Tablet Devices  - any size below 650px will be affected by this query */
+@media screen and (max-width: 650px) {
+  .besnik__prompter > div {
+    margin-bottom: 0.2rem;
+  }
+
+  .besnik__prompter-title {
+    font-size: 28px;
+    line-height: 47px;
+    margin-bottom: 1rem;
+  }
+
+  .besnik__prompter-text {
+    font-size: 14px;
+    line-height: 35px;
+  }
+}
+/* Mobile Devices  - any size below 490px will be affected by this query */
+@media screen and (max-width: 490px) {
+  .besnik__prompter {
+    padding: 4rem;
+  }
+  .besnik__prompter-text {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0 2rem;
+  }
+}
