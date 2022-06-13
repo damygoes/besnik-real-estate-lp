@@ -56,6 +56,10 @@
     margin-top: 1.2rem;
   }
 }
-/* Mobile Devices  - any size below 490px will be affected by this query */
-@media screen and (max-width: 490px) {
+/* Mobile Devices  - any size below 280px will be affected by this query */
+@media screen and (max-width: 280px) {
+  .besnik__description button {
+    line-height: 19px;
+    margin-top: 1rem;
+  }
 }

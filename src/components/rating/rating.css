@@ -54,7 +54,7 @@
     margin-right: 3rem;
   }
   .besnik__rating-content_right p {
-    margin-left: 5rem;
+    margin-left: 1rem;
   }
 }
 /* Tablet Devices  - any size below 650px will be affected by this query */
@@ -81,7 +81,7 @@
   .besnik__rating-content_right p {
     font-size: 12px;
     line-height: 21px;
-    text-align: center;
+    margin: 0;
   }
 }
 /* Mobile Devices  - any size below 490px will be affected by this query */
@@ -108,5 +108,38 @@
   .besnik__rating-content_right p {
     font-size: 16px;
     line-height: 20px;
+    margin: 0;
+    text-align: center;
+  }
+}
+/* Mobile Devices  - any size below 280px will be affected by this query */
+@media screen and (max-width: 280px) {
+  .besnik__rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .besnik__rating-content_left,
+  .besnik__rating-content_right {
+    width: 100%;
+    align-items: center;
+  }
+
+  .besnik__rating-content_left img,
+  .besnik__rating-content_right img {
+    margin-bottom: 1rem;
+  }
+  .besnik__rating-content_left p,
+  .besnik__rating-content_right p {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+    text-align: center;
+  }
+  .besnik__rating-content_right p {
+    padding: 0 1rem;
   }
 }

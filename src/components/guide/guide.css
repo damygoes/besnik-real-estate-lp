@@ -119,3 +119,25 @@
     line-height: 21px;
   }
 }
+
+/* Mobile Devices  - any size below 280px will be affected by this query */
+@media screen and (max-width: 280px) {
+  .besnik__guide-icon_container img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .besnik__guide-content_container {
+    padding: 0.2rem;
+  }
+  .besnik__guide-content_container p {
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .besnik__guide-content_container > div a {
+    font-size: 12px;
+    line-height: 21px;
+  }
+}

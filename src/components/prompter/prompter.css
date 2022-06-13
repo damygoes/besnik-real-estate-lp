@@ -76,3 +76,25 @@
     padding: 0 2rem;
   }
 }
+
+/* Mobile Devices  - any size below 280px will be affected by this query */
+@media screen and (max-width: 280px) {
+  .besnik__prompter {
+    padding: 4rem;
+  }
+
+  .besnik__prompter > div {
+    margin-bottom: 0rem;
+  }
+
+  .besnik__prompter-title {
+    font-size: 22px;
+    line-height: 47px;
+    margin-bottom: 1rem;
+  }
+  .besnik__prompter-text {
+    font-size: 14px;
+    line-height: 23px;
+    padding: 0 4rem;
+  }
+}

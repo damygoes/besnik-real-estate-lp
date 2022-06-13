@@ -6,6 +6,7 @@ import {
   Strength,
 } from "./container";
 import { Brand, CTA, Footer, Rating } from "./components";
+import HighlightImage from "../src/assets/image-card-highlight.svg";
 import "./App.css";
 
 function App() {
@@ -17,8 +18,16 @@ function App() {
         <Brand />
       </div>
       <Description />
-      <Featured />
-      <Highlight />
+      <Featured
+        title="Featured Properties"
+        subtext="Everything you need to know when you're looking"
+        linktext="View All Properties"
+      />
+      <Highlight
+        image={HighlightImage}
+        figure="40,000+"
+        text="By avarage for 2 bedroom apments in San Francisco, CA"
+      />
       <Strength />
       <CTA />
       <Footer />
