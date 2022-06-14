@@ -8,36 +8,39 @@ import "./highlight.css";
 
 const Highlight = ({ image, figure, text }) => {
   return (
-    <div className="besnik__highlight">
-      <div className="besnik__highlight-card__container">
-        <Card className="besnik__highlight-image__container">
-          <Card.Img variant="top" src={image} />
-        </Card>
+    <div className="besnik__highlight section__padding">
+      <div className="besnik__highlight-image__container">
+        <img src={image} alt="house" />
       </div>
-      <div className="besnik__highlight-card_float">
-        <Card className="besnik__highlight-card_float-card">
-          <Card.Body className="besnik__highlight-card_float-content ">
-            <Card.Title className="besnik__highlight-card_float-content_text">
-              {figure}
-              <img src={ArrowUp} alt="trend" />
-              <p className="besnik__highlight-card_float-content_text-desc">
-                {text}
-              </p>
-            </Card.Title>
-            <div></div>
-            <Container>
-              <div class="row besnik__highlight-card_float-content_image-container">
-                <img src={Group1} alt="users-group" />
-                <img src={Group2} alt="users-group" />
-              </div>
-            </Container>
-          </Card.Body>
-        </Card>
+      <Card className="besnik__highlight-card_float-card">
+        <Card.Body className="besnik__highlight-card_float-content ">
+          <Card.Title className="besnik__highlight-card_float-content_text">
+            {figure}
+            <img src={ArrowUp} alt="trend" />
+            <p className="besnik__highlight-card_float-content_text-desc">
+              {text}
+            </p>
+          </Card.Title>
+          <div className="besnik__highlight-card_float-content_empty"></div>
+          <Container>
+            <div className="row besnik__highlight-card_float-content_image-container">
+              <img src={Group1} alt="users-group" />
+              <img src={Group2} alt="users-group" />
+            </div>
+          </Container>
+        </Card.Body>
+      </Card>
+      <div className="besnik__prompter-highlight">
+        <div></div>
+        <p className="besnik__prompter-title_highlight">
+          You've found a neighborhood you love.
+        </p>
+        <p className="besnik__prompter-text_highlight">
+          When you own a home, you're committing to living in one location for a
+          while. In a recent Trulia survey, we found that five out of six
+          respondents said finding the right neighborhood
+        </p>
       </div>
-      <Prompter
-        title="You've found a neighborhood you love."
-        text="When you own a home, you're committing to living in one location for a while. In a recent Trulia survey, we found that five out of six respondents said finding the right neighborhood "
-      />
     </div>
   );
 };

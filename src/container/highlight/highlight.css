@@ -1,0 +1,330 @@
+.besnik__highlight {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+}
+
+.besnik__highlight-image__container {
+  width: 400px;
+  height: 460px;
+  display: flex;
+}
+.besnik__highlight-image__container img {
+  height: 100%;
+  width: 100%;
+  filter: drop-shadow(40px 80px 155px rgba(30, 103, 113, 0.03));
+  border-radius: 12px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.besnik__highlight-card_float-card {
+  width: 239px;
+  height: 252px;
+  padding: 1.5rem 0;
+  border: none;
+  outline: 0;
+  background: #fff;
+  box-shadow: 90px 85px 100px rgba(0, 0, 0, 0.06);
+  border-radius: 0px 0px 12px 12px;
+  position: absolute;
+  top: 1%;
+  right: 76%;
+}
+
+.besnik__highlight-card_float-content_text {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  color: var(--color-text-secondary);
+}
+.besnik__highlight-card_float-content_text img {
+  width: 25.11px;
+  height: 16.03px;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+}
+
+.besnik__highlight-card_float-content_text-desc {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #a7a7a7;
+  margin-top: 0.5rem;
+}
+
+.besnik__highlight-card_float-content_empty {
+  width: 193.62px;
+  height: 1.2px;
+  background: #e9e9e9;
+  margin-top: 0.5rem 0;
+}
+
+.besnik__highlight-card_float-content_image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 187.57px;
+  height: 49.01px;
+  padding: 0;
+  gap: 0;
+}
+
+.besnik__highlight-card_float-content_image-container img {
+  padding: 0;
+  margin: 0;
+  margin-top: 0;
+}
+
+/* Replaced Prompter Component */
+.besnik__prompter-highlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 309px;
+  height: 326px;
+}
+
+.besnik__prompter-highlight > div {
+  width: 41px;
+  height: 4px;
+  border: 2px solid var(--color-text-secondary);
+  background: 2px solid var(--color-text-secondary);
+  border-radius: 12px;
+  margin-bottom: 0.7rem;
+  align-self: flex-start;
+}
+
+.besnik__prompter-title_highlight {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 45px;
+  text-align: left;
+  color: var(--color-text-secondary);
+  margin-bottom: 2rem;
+}
+
+.besnik__prompter-text_highlight {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--color-subtext);
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+/* ############################## */
+
+/* 
+/* Media Queries */
+/* Larger Devices  - any size below 1050px will be affected by this query */
+@media screen and (max-width: 1050px) {
+  .besnik__highlight {
+    gap: 1rem;
+  }
+  .besnik__highlight-image__container {
+    width: 800px;
+    height: 460px;
+  }
+  .besnik__highlight-card_float-card {
+    width: 229px;
+    height: 250px;
+    padding: 0.5rem 0;
+    right: 75%;
+  }
+  .besnik__highlight-card_float-content_text {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .besnik__highlight-card_float-content_text img {
+    margin-left: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .besnik__highlight-card_float-content_text-desc {
+    margin-top: 0.2rem;
+  }
+
+  .besnik__prompter-highlight {
+    width: 529px;
+    height: 326px;
+    padding: 1rem;
+    margin-left: 3rem;
+  }
+
+  .besnik__prompter-highlight > div {
+    align-self: flex-end;
+    margin-bottom: 0.2rem;
+  }
+
+  .besnik__prompter-title_highlight {
+    font-size: 25px;
+    line-height: 35px;
+    text-align: right;
+    margin-bottom: 1rem;
+  }
+
+  .besnik__prompter-text_highlight {
+    font-size: 14px;
+    line-height: 27px;
+    text-align: left;
+  }
+}
+/* Tablet Devices  - any size below 650px will be affected by this query */
+@media screen and (max-width: 650px) {
+  .besnik__highlight {
+    flex-direction: column;
+  }
+  .besnik__highlight-image__container {
+    width: 400px;
+    height: 460px;
+  }
+  .besnik__highlight-card_float-card {
+    width: 239px;
+    height: 222px;
+    padding: 1.5rem 0;
+    position: absolute;
+    top: 0;
+    left: 56%;
+  }
+
+  .besnik__highlight-card_float-content_text {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .besnik__highlight-card_float-content_text img {
+    margin-left: 4rem;
+  }
+  .besnik__prompter-highlight {
+    margin-left: 0;
+    padding: 3rem;
+  }
+
+  .besnik__prompter-highlight > div {
+    align-self: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .besnik__prompter-title_highlight {
+    font-size: 35px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  .besnik__prompter-text_highlight {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+/* Mobile Devices  - any size below 490px will be affected by this query */
+@media screen and (max-width: 490px) {
+  .besnik__highlight {
+    flex-direction: column;
+  }
+  .besnik__highlight-image__container {
+    width: 350px;
+    height: 450px;
+  }
+  .besnik__highlight-card_float-card {
+    width: 225px;
+    height: 215px;
+    padding: 1.5rem 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+
+  .besnik__highlight-card_float-content_text {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .besnik__highlight-card_float-content_text-desc {
+    line-height: 12px;
+  }
+
+  .besnik__prompter-highlight {
+    padding: 1.5rem;
+    width: 359px;
+    height: 359px;
+    margin-left: 0;
+  }
+
+  .besnik__prompter-highlight > div {
+    align-self: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .besnik__prompter-title_highlight {
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .besnik__prompter-text_highlight {
+    font-size: 14px;
+    line-height: 27px;
+    text-align: center;
+  }
+}
+/* Mobile Devices  - any size below 280px will be affected by this query */
+@media screen and (max-width: 280px) {
+  .besnik__highlight {
+    flex-direction: column;
+    position: none;
+  }
+  .besnik__highlight-image__container {
+    width: 200px;
+    height: 250px;
+  }
+  .besnik__highlight-card_float-card {
+    width: 220px;
+    height: 220px;
+    padding: 2rem 0;
+    position: unset;
+  }
+
+  .besnik__highlight-card_float-content_text {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .besnik__highlight-card_float-content_text-desc {
+    line-height: 12px;
+  }
+
+  .besnik__prompter-highlight {
+    padding: 2rem;
+    width: 250px;
+    height: 250px;
+    margin-left: 0;
+    margin-top: 4rem;
+  }
+
+  .besnik__prompter-highlight > div {
+    align-self: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .besnik__prompter-title_highlight {
+    font-size: 22px;
+    line-height: 31px;
+    text-align: center;
+  }
+
+  .besnik__prompter-text_highlight {
+    font-size: 12px;
+    line-height: 23px;
+    text-align: center;
+  }
+}

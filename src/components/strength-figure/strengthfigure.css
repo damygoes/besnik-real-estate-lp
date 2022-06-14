@@ -1,0 +1,87 @@
+.besnik__strengthfigure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.besnik__strengthfigure-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 64px;
+  color: #000;
+}
+
+.besnik__strengthfigure-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #7b8087;
+  text-transform: capitalize;
+}
+
+/* 
+/* Media Queries */
+/* Larger Devices  - any size below 1050px will be affected by this query */
+@media screen and (max-width: 1050px) {
+  .besnik__strengthfigure {
+    margin-top: 1rem;
+  }
+  .besnik__strengthfigure-title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .besnik__strengthfigure-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+/* Tablet Devices  - any size below 650px will be affected by this query */
+@media screen and (max-width: 650px) {
+  .besnik__strengthfigure {
+    margin-top: 0rem;
+  }
+  .besnik__strengthfigure-title {
+    font-size: 38px;
+    line-height: 38px;
+  }
+
+  .besnik__strengthfigure-text {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+/* Mobile Devices  - any size below 490px will be affected by this query */
+@media screen and (max-width: 490px) {
+  .besnik__strengthfigure {
+    align-items: center;
+  }
+
+  .besnik__strengthfigure-title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .besnik__strengthfigure-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+/* Mobile Devices  - any size below 280px will be affected by this query */
+@media screen and (max-width: 280px) {
+  .besnik__strengthfigure-title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 0.5rem;
+  }
+
+  .besnik__strengthfigure-text {
+    font-size: 12px;
+    line-height: 17px;
+    margin-top: 0;
+  }
+}

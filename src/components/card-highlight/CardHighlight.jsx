@@ -20,16 +20,16 @@ const CardHighlight = ({ image, amount, address, bed, garage, size }) => {
             {address}
           </Card.Text>
           <Container>
-            <div class="row besnik__cardhighlight-card_snippets">
-              <div class="col ">
+            <div className="row besnik__cardhighlight-card_snippets">
+              <div className="col ">
                 <IoBedOutline />
                 <p> {bed} </p>
               </div>
-              <div class="col">
+              <div className="col">
                 <IoCarSportOutline />
                 <p> {garage} </p>
               </div>
-              <div class="col">
+              <div className="col">
                 <IoResizeOutline />
                 <p> {size} </p>
               </div>

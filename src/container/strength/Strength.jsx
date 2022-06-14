@@ -4,9 +4,10 @@ import "./strength.css";
 
 const Strength = () => {
   return (
-    <div>
-      Strength
-      <StrengthFigure />
+    <div className="besnik__strength">
+      <StrengthFigure title="2,500" text="homes for sale" />
+      <StrengthFigure title="5,000+" text="homes recently sold" />
+      <StrengthFigure title="170+" text="price reduced" />
     </div>
   );
 };

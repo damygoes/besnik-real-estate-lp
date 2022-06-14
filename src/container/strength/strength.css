@@ -1,0 +1,23 @@
+.besnik__strength {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+/* 
+/* Tablet Devices  - any size below 490px will be affected by this query */
+@media screen and (max-width: 490px) {
+  .besnik__strength {
+    flex-direction: column;
+  }
+}
+/* Mobile Devices  - any size below 280px will be affected by this query */
+@media screen and (max-width: 280px) {
+  .besnik__description button {
+    line-height: 19px;
+    margin-top: 1rem;
+  }
+}

@@ -30,7 +30,7 @@
 }
 
 /* 
-/* Media Queris */
+/* Media Queries */
 /* Larger Devices  - any size below 1050px will be affected by this query */
 @media screen and (max-width: 1050px) {
   .besnik__description button {
