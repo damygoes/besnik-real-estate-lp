@@ -130,17 +130,18 @@
 /* Larger Devices  - any size below 1050px will be affected by this query */
 @media screen and (max-width: 1050px) {
   .besnik__highlight {
+    flex-direction: column;
     gap: 1rem;
   }
   .besnik__highlight-image__container {
-    width: 800px;
-    height: 460px;
+    width: 100%;
+    height: 100%;
   }
   .besnik__highlight-card_float-card {
     width: 229px;
     height: 250px;
     padding: 0.5rem 0;
-    right: 75%;
+    right: 65%;
   }
   .besnik__highlight-card_float-content_text {
     font-size: 22px;
@@ -156,28 +157,26 @@
   }
 
   .besnik__prompter-highlight {
-    width: 529px;
-    height: 326px;
-    padding: 1rem;
-    margin-left: 3rem;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    margin-left: 0rem;
+    margin-top: 1rem;
   }
 
   .besnik__prompter-highlight > div {
-    align-self: flex-end;
     margin-bottom: 0.2rem;
   }
 
   .besnik__prompter-title_highlight {
     font-size: 25px;
     line-height: 35px;
-    text-align: right;
     margin-bottom: 1rem;
   }
 
   .besnik__prompter-text_highlight {
     font-size: 14px;
     line-height: 27px;
-    text-align: left;
   }
 }
 /* Tablet Devices  - any size below 650px will be affected by this query */
@@ -195,7 +194,7 @@
     padding: 1.5rem 0;
     position: absolute;
     top: 0;
-    left: 56%;
+    left: 50%;
   }
 
   .besnik__highlight-card_float-content_text {
@@ -233,31 +232,36 @@
     flex-direction: column;
   }
   .besnik__highlight-image__container {
-    width: 350px;
-    height: 450px;
+    width: 300px;
+    height: 350px;
   }
+
   .besnik__highlight-card_float-card {
-    width: 225px;
-    height: 215px;
-    padding: 1.5rem 0;
-    position: absolute;
-    top: 0;
-    left: 50%;
+    width: 300px;
+    height: 220px;
+    padding: 2rem;
+    position: unset;
   }
 
   .besnik__highlight-card_float-content_text {
     font-size: 22px;
     line-height: 22px;
   }
+
+  .besnik__highlight-card_float-content_text img {
+    margin-left: 5rem;
+    margin-bottom: 0.5rem;
+  }
   .besnik__highlight-card_float-content_text-desc {
     line-height: 12px;
   }
 
   .besnik__prompter-highlight {
-    padding: 1.5rem;
+    padding: 2rem 3rem;
     width: 359px;
     height: 359px;
     margin-left: 0;
+    margin-top: 1rem;
   }
 
   .besnik__prompter-highlight > div {
@@ -297,6 +301,10 @@
   .besnik__highlight-card_float-content_text {
     font-size: 22px;
     line-height: 22px;
+  }
+  .besnik__highlight-card_float-content_text img {
+    margin-left: 4rem;
+    margin-bottom: 0.5rem;
   }
 
   .besnik__highlight-card_float-content_text-desc {

@@ -19,7 +19,7 @@
 
 .besnik__footer-links_div {
   width: 250px;
-  margin: 1rem;
+  margin: 2rem 0rem;
 }
 
 .besnik__footer-links_div h4 {
@@ -65,7 +65,7 @@
 }
 
 .besnik__footer-copyright_logo {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   width: 107px;
   height: 24px;
 }
@@ -82,35 +82,159 @@
 
 /* 
 /* Media Queries */
-/* Larger Devices  - any size below 850px will be affected by this query */
-@media screen and (max-width: 850px) {
-  .besnik__footer-heading h1 {
-    font-size: 44px;
-    line-height: 50px;
+/* Larger Devices  - any size below 1050px will be affected by this query */
+@media screen and (max-width: 1050px) {
+  .besnik__footer-links_div {
+    margin: 2rem 0rem;
+    padding: 0.5rem;
+  }
+
+  .besnik__footer-links_div h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .besnik__footer-links_div p {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
-
-/* Larger Devices  - any size below 550px will be affected by this query */
-@media screen and (max-width: 550px) {
-  .besnik__footer-heading h1 {
-    font-size: 34px;
-    line-height: 42px;
+/* Large Devices  - any size below 755px will be affected by this query */
+@media screen and (max-width: 755px) {
+  .besnik__footer-links_div {
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 3rem;
   }
 
-  .besnik__footer-links div {
-    margin: 1rem 0;
-  }
-
-  .besnik__footer-btn p {
-    font-size: 14px;
+  .besnik__footer-links_div h4 {
+    font-size: 16px;
     line-height: 20px;
   }
+
+  .besnik__footer-links_div p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .flipped {
+    text-align: right;
+  }
+  .unflipped {
+    text-align: left;
+  }
+
+  .besnik__footer-copyright {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+    margin: 0rem;
+  }
+
+  .besnik__footer-copyright_logo {
+    margin: 0rem;
+  }
+
+  .besnik__footer-copyright p {
+    margin: 0rem;
+  }
 }
 
-/* Larger Devices  - any size below 400px will be affected by this query */
-@media screen and (max-width: 400px) {
-  .besnik__footer-heading h1 {
-    font-size: 27px;
-    line-height: 38px;
+/* Mobile Devices  - any size below 550px will be affected by this query */
+@media screen and (max-width: 625px) {
+  .besnik__footer-links {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+
+  .besnik__footer-links_div {
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .besnik__footer-links_div h4 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .besnik__footer-links_div p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+  }
+  .besnik__footer-links_div div {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .besnik__footer-copyright {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+    margin: 0rem;
+  }
+
+  .besnik__footer-copyright_logo {
+    margin: 0rem;
+  }
+
+  .besnik__footer-copyright p {
+    margin: 0rem;
+  }
+}
+
+/* Mobile Devices  - any size below 280px will be affected by this query */
+@media screen and (max-width: 280px) {
+  .besnik__footer-links {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+
+  .besnik__footer-links_div {
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .besnik__footer-links_div h4 {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .besnik__footer-links_div p {
+    font-size: 12px;
+    line-height: 17px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+  }
+  .besnik__footer-links_div div {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .besnik__footer-copyright {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    margin: 0rem;
+  }
+
+  .besnik__footer-copyright_logo {
+    margin: 0rem;
+  }
+
+  .besnik__footer-copyright p {
+    font-size: 12px;
+    line-height: 17px;
+    margin: 0rem;
   }
 }
